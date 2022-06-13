@@ -39,6 +39,10 @@ namespace DeltaCouting
                 root[0] = x1;
                 root[1] = x2;
             }
+            else
+            {
+                root = null; 
+            }
 
             return root;
 
