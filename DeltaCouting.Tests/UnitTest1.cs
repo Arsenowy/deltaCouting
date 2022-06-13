@@ -19,5 +19,17 @@ namespace DeltaCouting.Tests
 
             Assert.Equal(expected, root);
         }
+        [Fact]
+        public void one_delta_root()
+        {
+            DeltaCouting delta_couting = new DeltaCouting(1, 8, 16);
+            double[] root = new double[2];
+            double[] expected = new double[2];
+
+            root = delta_couting.countRoot();
+            expected[0] = -4;
+
+            Assert.Equal(expected, root);
+        }
     }
 }
